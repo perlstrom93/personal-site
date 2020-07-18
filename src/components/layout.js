@@ -8,9 +8,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
-// import { Link } from "gatsby";
 
-import Link from "./link";
+import NavLink from "./navLink";
 import Header from "./header";
 import "./layout.css";
 
@@ -36,9 +35,9 @@ const Layout = ({ children }) => {
           textAlign: `center`
         }}
       >
-        <Link to="/about/">About</Link>
-        <Link to="/skills/">Skills</Link>
-        <Link to="/experience/">Experience</Link>
+        <NavLink to="/about/">About</NavLink>
+        <NavLink to="/skills/">Skills</NavLink>
+        <NavLink to="/experience/">Experience</NavLink>
       </nav>
       <div
         style={{
@@ -48,7 +47,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
+        <footer style={{ marginTop: '20px'}}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

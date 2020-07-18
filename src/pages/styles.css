@@ -1,0 +1,19 @@
+.techListItem {
+  background-repeat: no-repeat;
+  background-size: 22px;
+  list-style: none;
+  padding-left: 25px;
+  background-position: left;
+}
+
+.techList {
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+}
+
+@media only screen and (max-width: 600px) {
+  .techList {
+    width: 100%;
+  }
+}
