@@ -32,10 +32,10 @@ const Layout = ({ children }) => {
           margin: `0 auto`,
           maxWidth: 960,
           padding: `0 1.0875rem 1.45rem`,
-          textAlign: `center`
+          textAlign: `center`,
         }}
       >
-        <NavLink to="/about/">About</NavLink>
+        <NavLink to="/">About</NavLink>
         <NavLink to="/skills/">Skills</NavLink>
         <NavLink to="/experience/">Experience</NavLink>
       </nav>
@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer style={{ marginTop: '20px'}}>
+        <footer style={{ marginTop: "20px" }}>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>

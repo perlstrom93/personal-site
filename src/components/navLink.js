@@ -6,16 +6,16 @@ const NavLink = ({ to, children }) => (
   <Link
     to={to}
     style={{
-      padding: `5px 20px`
+      padding: `5px 20px`,
     }}
   >
     {children}
   </Link>
-)
+);
 
 NavLink.propTypes = {
   to: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-}
+};
 
 export default NavLink;
