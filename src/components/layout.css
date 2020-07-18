@@ -40,12 +40,17 @@ template {
   display: none;
 }
 a {
+  color: #0e62aa;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
 a:active,
 a:hover {
+  color: #000;
   outline-width: 0;
+}
+a:focus {
+  outline-color: #0e62aa;
 }
 abbr[title] {
   border-bottom: none;
@@ -199,7 +204,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: #0e62aa;
   font-family: georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -234,7 +239,7 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 3rem;
   line-height: 1.1;
 }
 h2 {
