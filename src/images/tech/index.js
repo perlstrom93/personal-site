@@ -15,3 +15,5 @@ export { default as AppdImg } from "./appdynamics.png";
 export { default as SplunkImg } from "./splunk.png";
 export { default as GitImg } from "./git.png";
 export { default as GitHubImg } from "./github.png";
+
+export { default as LinkedInImg } from "./linkedin.png";

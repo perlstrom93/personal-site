@@ -9,7 +9,7 @@ const ExperiencePage = () => (
     <SEO title="Experience" />
     <h2>Experience</h2>
     <Section borderBottom>
-      <h3>Analyst Consultant</h3>
+      <h3>Consultant Specialist</h3>
       <h4>first direct, April 2020 - Present</h4>
       <p>
         Writing high quality, maintainable and scalable code to improve the

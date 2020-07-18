@@ -1,17 +1,16 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import NavLink from "./navLink";
 import Header from "./header";
+import ExternalLink from "./externalLink";
 import "./layout.css";
+
+import {
+  LinkedInImg,
+  GitHubImg,
+} from "../images/tech";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -50,7 +49,27 @@ const Layout = ({ children }) => {
         <footer style={{ marginTop: "20px" }}>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <ExternalLink to="https://www.gatsbyjs.org">Gatsby</ExternalLink>
+          {`. `}
+          Also check out my
+          {` `}
+          <span
+            className="footerLink"
+            style={{ backgroundImage: `url(${LinkedInImg})` }}
+          >
+            <ExternalLink to="https://uk.linkedin.com/in/adam-perlstrom-22b32260">LinkedIn</ExternalLink>
+          </span>
+          {` and `}
+          <span
+            className="footerLink"
+            style={{ backgroundImage: `url(${GitHubImg})` }}
+          >
+            <ExternalLink to="https://github.com/perlstrom93">GitHub</ExternalLink>
+          </span>
+          , or
+          {` `}
+          <a href="mailto:adam.perlstrom@hotmail.co.uk">drop me an email</a>
+          {`.`}
         </footer>
       </div>
     </>

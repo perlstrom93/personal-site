@@ -625,3 +625,11 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+/* Custom classes */
+.footerLink {
+  background-repeat: no-repeat;
+  background-size: 22px;
+  padding-left: 25px;
+  background-position: left;
+}
