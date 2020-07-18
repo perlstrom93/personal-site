@@ -7,10 +7,7 @@ import Header from "./header";
 import ExternalLink from "./externalLink";
 import "./layout.css";
 
-import {
-  LinkedInImg,
-  GitHubImg,
-} from "../images/tech";
+import { LinkedInImg, GitHubImg } from "../images/tech";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -57,14 +54,18 @@ const Layout = ({ children }) => {
             className="footerLink"
             style={{ backgroundImage: `url(${LinkedInImg})` }}
           >
-            <ExternalLink to="https://uk.linkedin.com/in/adam-perlstrom-22b32260">LinkedIn</ExternalLink>
+            <ExternalLink to="https://uk.linkedin.com/in/adam-perlstrom-22b32260">
+              LinkedIn
+            </ExternalLink>
           </span>
           {` and `}
           <span
             className="footerLink"
             style={{ backgroundImage: `url(${GitHubImg})` }}
           >
-            <ExternalLink to="https://github.com/perlstrom93">GitHub</ExternalLink>
+            <ExternalLink to="https://github.com/perlstrom93">
+              GitHub
+            </ExternalLink>
           </span>
           , or
           {` `}
